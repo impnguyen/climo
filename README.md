@@ -1,5 +1,5 @@
 # climo
-"climo" is the abbreviation for **Cli**ent**Mo**nitoring. It is an abap logging service for client monitoring. This solution was build with cds, bopf and the odata protocol. 
+"climo" is the abbreviation for **Cli**ent**Mo**nitoring. It is an abap logging service for client messages or errors. This solution was build with Abap Core Data Services, Business Object Framework and the OData protocol. 
 
 ## purpose
 This service was build to log a variety of message types like 
