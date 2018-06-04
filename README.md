@@ -2,7 +2,7 @@
 "climo" is the abbreviation for **Cli**ent**Mo**nitoring. It is an abap logging service for client messages or errors. This solution was build with Abap Core Data Services, Business Object Framework and the OData protocol. 
 
 ## purpose
-This service was build to log a variety of message types like 
+This service was build to log a variety of message/error types like 
 - errors based on the sapui5/openui5 framwork
 - uncaught exception based on javascript window.onError event
 - odata backend messages
