@@ -3,7 +3,7 @@
 
 ## purpose
 This service was build to log a variety of message/error types like 
-- errors based on the sapui5/openui5 framwork
+- errors based on the sapui5/openui5 framework
 - uncaught exception based on javascript window.onError event
 - odata backend messages
 - your custom message types
