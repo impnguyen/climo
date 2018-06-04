@@ -1,3 +1,5 @@
+![error cds view](https://github.com/impnguyen/climo/blob/master/readmeMedia/errorCdsView.png)
+
 # climo
 "climo" is the abbreviation for **Cli**ent**Mo**nitoring. It is an abap logging service for client messages or errors. This solution was build with Abap Core Data Services, Business Object Framework and the OData protocol. 
 
