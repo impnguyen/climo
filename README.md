@@ -15,3 +15,10 @@ You only have to create a post request against the published odata service (spec
 
 ### how to use - sapui5/openui5
 coming soon
+
+
+## http rest client - postman suite
+With the postman-collection json file you can execute the defined tests with postman. 
+Just import the [JSON-export](https://github.com/impnguyen/climo/tree/dev/postman) into your postman testsuite or newman test environment and execute the tests. 
+
+
