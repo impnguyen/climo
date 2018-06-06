@@ -1,14 +1,16 @@
 ![error cds view](https://github.com/impnguyen/climo/blob/master/readmeMedia/errorCdsView.png)
 
 # Table of Contents
-1. [CLIMO](#CLIMO)
+1. [What is CLIMO?](#What-is-CLIMO?)
 2. [Purpose](#Purpose)
 3. [How to use](#How-to-use)
 4. [Http rest client - Postman suite](#Http-rest-client---Postman-suite)
 
-# CLIMO
+# What is CLIMO?
 
 "climo" is the abbreviation for **Cli**ent**Mo**nitoring. It is an abap logging service for client messages or errors. This solution was build with Abap Core Data Services, Business Object Framework and the OData protocol.
+
+You can also use CLIMO with all http based frameworks or libraries. The communication protocol is OData V2.
 
 ## Purpose
 
