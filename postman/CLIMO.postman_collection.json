@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "29a02f2b-137f-462b-b80a-c3f6f21d554f",
+		"name": "CLIMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Service Document",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2ZWxvcGVyOkFwcGwxYW5jZQ=="
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sap/opu/odata/sap/Z_C_CLIMO_ERROR_CDS/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"Z_C_CLIMO_ERROR_CDS",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "$metadata",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2ZWxvcGVyOkFwcGwxYW5jZQ=="
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sap/opu/odata/sap/Z_C_CLIMO_ERROR_CDS/$metadata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"Z_C_CLIMO_ERROR_CDS",
+						"$metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "error - get top 4 entities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2ZWxvcGVyOkFwcGwxYW5jZQ=="
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sap/opu/odata/sap/Z_C_CLIMO_ERROR_CDS/z_c_climo_error?$top=4&$format=json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"Z_C_CLIMO_ERROR_CDS",
+						"z_c_climo_error"
+					],
+					"query": [
+						{
+							"key": "$top",
+							"value": "4"
+						},
+						{
+							"key": "$format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "error - get entity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2ZWxvcGVyOkFwcGwxYW5jZQ=="
+					},
+					{
+						"key": "x-csrf-token",
+						"value": "fetch"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sap/opu/odata/sap/Z_C_CLIMO_ERROR_CDS/z_c_climo_error(guid'00000000-0000-0000-0000-000000000000')?$format=json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"Z_C_CLIMO_ERROR_CDS",
+						"z_c_climo_error(guid'00000000-0000-0000-0000-000000000000')"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "error - create entity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2ZWxvcGVyOkFwcGwxYW5jZQ=="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-csrf-token",
+						"value": "vI4cb0F4HZJOfuewjByxYg=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"line_no\": \"00089\",\n        \"col_no\": \"00004\",\n        \"client_user\": \"DEVELOPER\",\n        \"type\": \"002\",\n        \"message\": \"odata uncaught error 500\",\n        \"host_name\": \"WWW.LOCALHOST.DE\",\n        \"port\": \"8000\",\n        \"path_name\": \"/APP/PATH/NAME\",\n        \"search\": \"?$FORMAT=JSON\",\n        \"timestamp\": \"/Date(1528044544000+0000)/\",\n        \"source\": \"app.js\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sap/opu/odata/sap/Z_C_CLIMO_ERROR_CDS/z_c_climo_error",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"Z_C_CLIMO_ERROR_CDS",
+						"z_c_climo_error"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
