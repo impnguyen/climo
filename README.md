@@ -23,7 +23,7 @@ This service was build to log a variety of message/error types like
 
 You only have to create a post request against the published odata service (specially against the error entity).
 
-### how to use - sapui5/openui5
+### sapui5/openui5
 
 coming soon
 
