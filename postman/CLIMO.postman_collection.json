@@ -159,6 +159,37 @@
 		},
 		{
 			"name": "error - create entity",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "930b01fc-5684-4117-812e-1a084a88b8d4",
+						"type": "text/javascript",
+						"exec": [
+							"//prepare functions and vars",
+							"var tmp = +new Date();",
+							"function generateName(iLength) {",
+							"  var text = \"\";",
+							"  var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
+							"",
+							"  for (var i = 0; i < iLength; i++)",
+							"    text += possible.charAt(Math.floor(Math.random() * possible.length));",
+							"",
+							"  return text;",
+							"}",
+							"",
+							"",
+							"pm.globals.set(\"line_no\", String((Math.random() * 100).toFixed(0)));",
+							"pm.globals.set(\"col_no\", String((Math.random() * 100).toFixed(0)));",
+							"pm.globals.set(\"type\", '00'+Math.floor(Math.random()*3));",
+							"pm.globals.set(\"timestamp\", \"/Date(\"+ tmp +\")/\");",
+							"pm.globals.set('source', generateName(10)+'.js');",
+							"pm.globals.set('client_user', generateName(5));",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -172,12 +203,12 @@
 					},
 					{
 						"key": "x-csrf-token",
-						"value": "vI4cb0F4HZJOfuewjByxYg=="
+						"value": "JkOT__zzPWCqOesRHrJc6w=="
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"line_no\": \"00089\",\n        \"col_no\": \"00004\",\n        \"client_user\": \"DEVELOPER\",\n        \"type\": \"002\",\n        \"message\": \"odata uncaught error 500\",\n        \"host_name\": \"WWW.LOCALHOST.DE\",\n        \"port\": \"8000\",\n        \"path_name\": \"/APP/PATH/NAME\",\n        \"search\": \"?$FORMAT=JSON\",\n        \"timestamp\": \"/Date(1528044544000+0000)/\",\n        \"source\": \"app.js\"\n}"
+					"raw": "{\n        \"line_no\": \"{{line_no}}\",\n        \"col_no\": \"{{col_no}}\",\n        \"client_user\": \"{{client_user}}\",\n        \"type\": \"{{type}}\",\n        \"message\": \"odata uncaught error 500\",\n        \"host_name\": \"www.localhost.de\",\n        \"port\": \"8000\",\n        \"path_name\": \"/APP/PATH/NAME\",\n        \"search\": \"?$FORMAT=JSON\",\n        \"timestamp\": \"{{timestamp}}\",\n        \"source\": \"{{source}}\"\n}"
 				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/sap/opu/odata/sap/Z_C_CLIMO_ERROR_CDS/z_c_climo_error",
