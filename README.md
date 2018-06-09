@@ -1,10 +1,10 @@
 ![error cds view](https://github.com/impnguyen/climo/blob/master/readmeMedia/errorCdsView.png)
 
 # Table of Contents
-1. [What is CLIMO?](#What-is-CLIMO?)
-2. [Purpose](#Purpose)
-3. [How to use](#How-to-use)
-4. [Http rest client - Postman suite](#Http-rest-client---Postman-suite)
+1. [What is CLIMO?](#what-is-climo)
+2. [Purpose](#purpose)
+3. [How to use](#how-to-use)
+4. [Http rest client - Postman suite](#http-rest-client---postman-suite)
 
 # What is CLIMO?
 
