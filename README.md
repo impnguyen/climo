@@ -34,4 +34,6 @@ coming soon
 With the postman-collection json file you can execute the defined tests with postman.
 Just import the [JSON-export](https://github.com/impnguyen/climo/tree/dev/postman) into your postman testsuite or newman test environment and execute the tests.
 
+You also can use the create entry request with random post body parameters to simulate many logs in your logging table.
+
 ![postman collection](https://github.com/impnguyen/climo/blob/dev/readmeMedia/postmanTestSuite.png)
